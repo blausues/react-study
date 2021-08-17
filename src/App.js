@@ -1,7 +1,13 @@
-import Counter from './Counter.js';
+import React from 'react';
+import TodoTemplate from './components/TodoTemplate';
+import TodoInsert from './components/TodoInsert';
 
 const App = () => {
-    return <Counter test={2} />;
+    return (
+        <TodoTemplate>
+            <TodoInsert />
+        </TodoTemplate>
+    );
 };
 
 export default App;
